@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 80;
+
+  background-color: blue;
+}
+
+.item2 {
+  grid-column-start: 10;
+  grid-column-end: 20;
+  grid-row-start: 1;
+  grid-row-end: 40;
+
+  background: rgb(11,9,50);
+  background: linear-gradient(90deg, rgba(11,9,50,1) 0%, rgba(58,4,59,1) 35%, rgba(106,8,105,1) 100%);
+}
+
+.item3 {
+  grid-column-start: 10;
+  grid-column-end: 20;
+  grid-row-start: 40;
+  grid-row-end: 80;
+
+  background: url('./images/item3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"></div>
+
+  <div class="item2"></div>
+  <div class="item3">Puppy cat</div>
+</div>
+
+</body>
+</html>
